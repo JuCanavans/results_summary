@@ -163,3 +163,14 @@ body{
     background-color: #5d3efa;
     cursor: pointer;
 }
+
+.footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 1em;
+}
+
+.footer-text{
+    text-align: center;
+}
