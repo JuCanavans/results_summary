@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --font-primary: 'Hanken Grotesk', sans-serif;
+    --background-color: #ffffff;
+    --background-color-gradient: linear-gradient(to top, #322be9, #6541fd);
+    --background-color-border: linear-gradient(180deg, #4c22ca, #4734f0);
+    --color-secondary: #c8c0ff;
+    --color-the-third:#363c55;
+    --color-button: #313a5a;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--background-color);
+    font-family: var(--font-primary);
+}
+
+.main{
+    overflow: hidden;
+}
+
+.main-container{
+    background-color: var(--background-color);
+    position: absolute;
+    max-width: 725px;
+    box-shadow: 15px 15px 1rem hsla(234, 85%, 45%, 0.1);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    border-radius: 1.6em;
+}
+
+@media (max-width: 414px){
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: -50px;
+        gap: 25px;
+    }
+    .main-container-description{
+        align-items: center;
+        width: auto;
+    }
+}
+
+.main-container-left{
+    background-image: var(--background-color-gradient);
+    color: var(--background-color);
+    border-radius: 1.9em;
+}
+
+.main-container-description{
+    margin: 2.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+}
+
+.main-container-text{
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--color-secondary);
+}
+
+.main-container-animation{
+    border-radius: 50%;
+    background: var(--background-color-border);
+    width: 200px;
+    height: 200px;
+    display: grid;
+    align-items: center;
+    overflow: hidden;
+}
+
+.main-container-title{
+    margin-bottom: 0.3em;
+    text-align: center;
+    font-size: 2.1em;
+}
+
+.tile-number{
+    display: flex;
+    flex-direction: column;
+    font-size: 4.5em;
+    font-weight: 800;
+}
+
+.text-decoration{
+    font-size: 1.5em;
+    font-weight: 800;
+    margin-bottom: 0.65em;
+}
+
+.description-text{
+    margin: 0.2em;
+    font-size: 1.12em;
+}
+
+/*Secao ha direita*/
+
+.main-container-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-left: 2.3em;
+    margin-right: 2.3em;
+}
+
+.title-right{
+    color: var(--color-the-third);
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.main-container-icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-radius: 0.5em;
+}
+
+.container-icon{
+    display: flex;
+    justify-content: space-around;
+    gap: 1em;
+    margin: 1em;
+}
+
+.container-number{
+    margin: 1em;
+}
+
+.strong{
+    color: #a69ea2;
+}
+
+.button{
+    background-color: var(--color-button);
+    border: none;
+    width: 100%;
+    padding: 1em;
+    border-radius: 27px;
+    color: var(--background-color);
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+.button:hover{
+    background-color: #5d3efa;
+    cursor: pointer;
+}
