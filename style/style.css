@@ -43,12 +43,13 @@ body{
         display: flex;
         flex-direction: column;
         width: 100%;
-        margin-top: -50px;
-        gap: 25px;
+        gap: 1.5em;
     }
-    .main-container-description{
-        align-items: center;
-        width: auto;
+    .main-container-right{
+        gap: 1.5em;
+    }
+    .button{
+        margin-bottom: 1.5em;
     }
 }
 
