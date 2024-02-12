@@ -103,6 +103,7 @@ body{
 }
 
 .description-text{
+    text-align: center;
     margin: 0.2em;
     font-size: 1.12em;
 }
